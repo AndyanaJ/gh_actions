@@ -1,0 +1,14 @@
+name: Hello World Action
+
+on:
+  push:
+    branches:
+      - main  # or whatever your default branch is
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # You can change the runner if needed
+
+    steps:
+    - name: Say Hello
+      run: echo "Hello, World!"
